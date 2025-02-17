@@ -1,6 +1,8 @@
 const express = require("express");
+require("dotenv").config();
 const cors = require("cors");
 const jokesRouter = require("./routes/api/jokesRouter")
+
 const app = express();
 app.use(cors());
 app.use(express.json());
