@@ -11,7 +11,7 @@ router.delete("/:id", isValidId, ctrl.deleteById);
 router.put(
   "/:id",
   isValidId,
-  validateBody(shemas.upDateSchema),
+  validateBody(shemas.updateJokeSchema),
   ctrl.updateById
 );
 router.patch(
